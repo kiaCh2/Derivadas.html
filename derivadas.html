@@ -2,63 +2,42 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Derivada por Definición</title>
+  <title>Derivada paso a paso</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background: #f8f8f8;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      padding: 40px;
     }
-    .container {
-      background: #fff;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      padding: 20px;
+
+    .contenedor {
+      background-color: #ffffff;
       max-width: 800px;
       margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
       text-align: center;
       color: #2c3e50;
+      margin-bottom: 30px;
     }
-    .step {
-      margin-bottom: 15px;
+
+    .paso {
+      margin-bottom: 20px;
       font-size: 18px;
-    }
-    .highlight {
+      line-height: 1.6;
       background-color: #ecf0f1;
-      padding: 8px;
-      border-left: 4px solid #2980b9;
+      padding: 12px;
+      border-left: 5px solid #3498db;
+      border-radius: 5px;
     }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Derivada por definición: f(x) = x²</h1>
 
-    <div class="step"><strong>1. Fórmula general:</strong></div>
-    <div class="highlight">f'(x) = lim<sub>Δx → 0</sub> [(f(x + Δx) - f(x)) / Δx]</div>
-
-    <div class="step"><strong>2. Sustituyendo f(x) = x²:</strong></div>
-    <div class="highlight">f'(x) = lim<sub>Δx → 0</sub> [((x + Δx)² - x²) / Δx]</div>
-
-    <div class="step"><strong>3. Expande el binomio:</strong></div>
-    <div class="highlight">(x + Δx)² = x² + 2x·Δx + (Δx)²</div>
-
-    <div class="step"><strong>4. Sustituyendo en la fórmula:</strong></div>
-    <div class="highlight">f'(x) = lim<sub>Δx → 0</sub> [(x² + 2x·Δx + (Δx)² - x²) / Δx]</div>
-
-    <div class="step"><strong>5. Simplifica:</strong></div>
-    <div class="highlight">= lim<sub>Δx → 0</sub> [(2x·Δx + (Δx)²) / Δx]</div>
-
-    <div class="step"><strong>6. Factoriza Δx:</strong></div>
-    <div class="highlight">= lim<sub>Δx → 0</sub> [Δx(2x + Δx) / Δx]</div>
-
-    <div class="step"><strong>7. Cancela Δx:</strong></div>
-    <div class="highlight">= lim<sub>Δx → 0</sub> [2x + Δx]</div>
-
-    <div class="step"><strong>8. Aplica el límite:</strong></div>
-    <div class="highlight">f'(x) = 2x</div>
-  </div>
-</body>
-</html>
+    .resultado {
+      font-size: 20px;
+      font-weight: bold;
+      color: #27ae60;
+      text-align: center;
+      margi
