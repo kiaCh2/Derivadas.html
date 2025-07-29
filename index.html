@@ -40,4 +40,43 @@
       font-weight: bold;
       color: #27ae60;
       text-align: center;
-      margi
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Derivada de f(x) = x² usando la definición</h1>
+
+    <div class="paso">1. Usamos la fórmula: <br>
+      f'(x) = lim&lt;Δx → 0&gt; [(f(x + Δx) - f(x)) / Δx]
+    </div>
+
+    <div class="paso">2. Sustituimos f(x) = x²: <br>
+      f'(x) = lim&lt;Δx → 0&gt; [((x + Δx)² - x²) / Δx]
+    </div>
+
+    <div class="paso">3. Expandimos (x + Δx)²: <br>
+      = lim&lt;Δx → 0&gt; [(x² + 2xΔx + (Δx)² - x²) / Δx]
+    </div>
+
+    <div class="paso">4. Simplificamos términos semejantes: <br>
+      = lim&lt;Δx → 0&gt; [(2xΔx + (Δx)²) / Δx]
+    </div>
+
+    <div class="paso">5. Factorizamos Δx en el numerador: <br>
+      = lim&lt;Δx → 0&gt; [Δx(2x + Δx) / Δx]
+    </div>
+
+    <div class="paso">6. Cancelamos Δx: <br>
+      = lim&lt;Δx → 0&gt; [2x + Δx]
+    </div>
+
+    <div class="paso">7. Aplicamos el límite (Δx → 0): <br>
+      = 2x
+    </div>
+
+    <div class="resultado">👉 Entonces, f'(x) = 2x ✅</div>
+  </div>
+</body>
+</html>
